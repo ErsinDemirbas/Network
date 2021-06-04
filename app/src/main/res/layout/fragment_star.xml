@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Star Topology"
+        android:textStyle="italic|bold"
+        android:textColor="#000"
+        android:textSize="21dp"
+        style="@style/TextAppearance.MaterialComponents.Caption">
+    </TextView>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="334dp"
+        android:layout_height="171dp"
+        android:layout_gravity="center"
+        app:layoutDescription="@xml/scene_star"
+        app:showPaths="false"
+        tools:context=".topology.FragmentStar">
+
+        <ImageView
+            android:id="@+id/hub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/star_topology" />
+
+        <ImageView
+            android:id="@+id/pc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/laptop" />
+
+        <ImageView
+            android:id="@+id/pc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/laptop" />
+
+        <ImageView
+            android:id="@+id/pc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/laptop" />
+
+        <ImageView
+            android:id="@+id/pc4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/laptop" />
+
+        <ImageView
+            android:id="@+id/pc5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/laptop" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <TextView
+        android:id="@+id/txt_star"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="14dp"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+</LinearLayout>
